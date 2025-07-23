@@ -5,10 +5,10 @@ function getHumanChoice() {
 
 
 function getComputerChoice() {
-    let computer = Math.random() * 100 + 51;
-    if (computer <= 50) {
+    let computer = Math.floor(Math.random() * 3);
+    if (computer == 0) {
         return "rock";
-    }else if (computer <= 100) {
+    }else if (computer == 1) {
         return "paper";
     }else {
         return "scissors";
